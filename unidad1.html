@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./styles.css">
+
+    <title>Seguros No Pagamos Coop.</title>
+</head>
+<body>
+    <article>
+       
+        <h1>Seguro No Pagamos Coop.</h1>
+        <p>2 años en el mercado.</p>
+        <p>Contactános.</p>
+
+    </article>
+    
+    <form id="formularioID" action="#"  onsubmit="verificar(); return false" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="" placeholder="Nombre">
+        <label for="dni">D.N.I</label>
+        <input type="number" name="dni" placeholder="D.N.I">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" placeholder="E-mail">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" name="telefono" id="" placeholder="Teléfono">
+        <label class="label__div" for="eleccion">Plan seguro</label>
+        <div name="eleccion">
+            <select name="seguro" onchange="elegirPlan();" id="planID">
+                <option value="basico" selected>Basico</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="premium">Premium</option>
+            </select>
+            <span class="span__precios" id="spanID">$</span>
+        </div>
+        
+        <input type="submit" value="Elegir">
+        <span id="camposIncompletos" hidden> Debés completar todos los campos</span>
+        
+    </form>
+    <script  src="./unidad1.js"></script>
+</body>
+</html>
